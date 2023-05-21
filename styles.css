@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&display=swap');
+/* font-family: 'IBM Plex Sans Arabic', sans-serif;  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+}
+
+.container {
+    /* border: 5px solid red; */
+}
+
+#side-bar {
+    flex: 1;
+    background-color: #FFE57D;
+    color: #3D3D3D;
+}
+
+#logo {
+    padding-top: 1rem;
+}
+
+#logo ul {
+    display: grid;
+    grid-auto-rows: 1fr / 1fr;
+    grid-template-columns: 1fr ;
+    list-style: none;
+}
+
+#content {
+    flex: 5;
+    background-color: #3D3D3D;
+    color: #fff2c0;
+    display: flex;
+}
+
+#logo #heading-title,
+#logo #heading-icon {
+    display: flex;
+    height: 10rem;
+
+}
+
+#heading-title h1,
+#heading-icon video {
+    flex: 1;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#heading-title h1 {
+    align-items: flex-start;
+}
+
+#nav-content ul {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+}
+
+#nav-content ul li svg {
+    height: 6rem;
+    fill: #3D3D3D;
+    width: auto;
+}
+
+.nav-icon button {
+    border: none;
+    background-color: transparent;
+    color: #3D3D3D;
+    font-weight: bold;
+}
+
+#nav-content ul li button:hover {
+    cursor: pointer;
+    fill: #FFE57D;
+    box-shadow: #3D3D3D;
+    color: #FFE57D;
+    text-shadow: 1 1 1 #3D3D3D;
+}
+
+#nav-content ul li {
+    display: flex;
+    align-items: center;
+}
+
+#nav-content .nav-button {
+    justify-content: flex-start;
+}
+
+#nav-content .nav-icon {
+    justify-content: flex-end;
+}
+
+.nav-button button {
+    font-size: x-large;
+    border: none;
+    background-color: transparent;
+    color: #3D3D3D;
+    font-weight: bold;
+}
+
+#books {
+    flex: 1;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    column-gap: 2rem;
+    row-gap: 3rem;
+}
+
+.book {
+    height: 17rem;
+    width: 20rem;
+    display: flex;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 3px 1px #FFE57D;
+    flex-wrap: wrap;
+}
+
+
+
+.book-cover-card,
+.book-info-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.book-cover-card {
+    justify-content: center;
+    align-items: center ;
+}
+
+.book-cover-card img {
+    height: 13rem;
+    width: fit-content;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 3px 1px #333333;
+}
+
+.book-info-card h3,
+.book-info-card p {
+    flex: 1;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.book-info-card {
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+}
