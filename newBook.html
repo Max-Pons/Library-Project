@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>New Book</title>
+</head>
+<body>
+    <div class="container">
+        <div id="logo">
+            <ul>
+                <li id="heading-icon">
+                    <video src="img/Header Logo.mp4" type="video/mp4" autoplay loop muted></video>
+                </li>
+                <li id="heading-title">     
+                    <h1>Add Book</h1>
+                </li>
+            </ul>            
+        </div>
+        
+        <div id="form-container">
+            <form action="index.html" method="post">
+                <div>
+                    <label for="book-title">Book</label>
+                    <input type="text" name="book-title" id="book-title" placeholder=" title of the book">    
+                </div>
+                <div>
+                    <label for="book-author">Author</label>
+                    <input type="text" name="book-author" id="book-author" placeholder=" i.e. 'J.K Rowling'">    
+                </div>
+                <div>
+                    <label for="book-pages">Pages</label>
+                    <input type="text" name="book-pages" id="book-pages" placeholder=" i.e. '169'">
+                </div>
+                <div>
+                    <label for="book-check">Have you read it?</label>
+                    <input type="checkbox" name="book-check" id="book-check">    
+                </div>
+                <div class="submit-container">
+                    <input class="submit" type="submit" name="submit" id="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

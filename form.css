@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&display=swap');
+/* font-family: 'IBM Plex Sans Arabic', sans-serif;  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+}
+
+.container {
+    background-color: #3D3D3D;
+    flex: 1;
+    color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-popup-container {
+    gap: 3rem;
+    background-color: #3D3D3D;
+    flex: 1;
+    color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    padding-top: 3rem;
+    flex: 1;
+}
+
+#logo ul {
+    display: grid;
+    grid-auto-rows: 1fr / 1fr;
+    grid-template-columns: 1fr ;
+    list-style: none;
+    row-gap: 1rem;
+}
+
+#logo #heading-title,
+#logo #heading-icon {
+    display: flex;
+    height: 10rem;
+    justify-content: center;
+}
+
+#heading-icon video {
+    border-radius: 2rem;
+}
+
+#form-container {
+    display: flex;
+    flex: 1;
+}
+
+#form-container form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#form-container form div {
+    display: grid;
+    gap: 1rem;
+    justify-content: end;
+    align-items: center;
+}
+
+#form-container form div label:hover {
+    cursor: pointer;
+}
+
+#form-container form div label {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    text-align: start !important;
+}
+
+#form-container form div input {
+    grid-column: 3 / 4;
+    border-radius: 0.20rem;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0px 0px 3px 1px white;
+    padding-left: .5rem;
+    height: 2rem;
+    color: #efefef;
+}
+
+#form-container form div input:focus {
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 3px 2px white;;
+}
+
+.submit-container {
+    display: grid !important;
+    grid-template: 1fr / repeat(3, 1fr);
+
+}
+
+.submit {
+    width: 5rem;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: #efefef !important;
+    box-shadow: none !important;
+    color: #3D3D3D !important;
+    font-size: 1rem;
+    width: fit-content;
+    padding-left: 1rem !important;
+    padding-right: 1rem;
+    grid-column: 4 / 5 !important;
+}
+
+#book-check {
+    box-shadow: none !important;
+    height: 1.5rem !important;
+}
+
+#book-check:hover {
+    cursor: pointer;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: #efefefdb !important;
+    transform: scale(1.03)
+}
+
+#paragraph-info {  
+    display: flex;
+    flex: 2;
+}
+
+#paragraph-info .info-flex {
+    flex: 1;
+}
+
+#p-info {
+    flex: 2;
+}
